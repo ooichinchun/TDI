@@ -6,7 +6,10 @@ Public records for public housing resale prices have been downloaded and post-pr
 
 ### Time-consistency of Resale Prices
 
-![Resale Price Index](https://raw.githubusercontent.com/ooichinchun/TDI/master/Resale_plot.png "Resale Price Index")
+| ![Resale Price Index](https://raw.githubusercontent.com/ooichinchun/TDI/master/resale_plot.png "Resale Price Index") | 
+|:--:| 
+| *Resale Price Index (2009-2017)* |
+
 
 
 
