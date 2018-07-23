@@ -29,17 +29,25 @@ Figure above is generated via the use of this [R script](https://raw.githubuserc
 
 ### Linear Regression Models
 
-We were expecting the resale prices to show significant variation with distance from downtown, however, the figure above does not seem to show a significant price variation between the various locations across the island.
+While one would expect the resale prices to show significant variation with distance from downtown, the figure above does not seem to show a significant price variation between the various locations across the island.
 
-We thus set out to further investigate the influence of the following factors on housing prices:
+I thus set out to further investigate the influence of the following factors on housing prices:
 1. Floor area
 2. Age of the unit
 3. Actual height of the unit (aka storey)
 4. Distance to nearest MRT station
 5. Distance to downtown (proxy: City Hall MRT station)
-![Traffic Camera Locations](traffic_camera_loc.png)
 
 #### Obtaining distance to nearest MRT station and downtown
 
+Train station names were downloaded from data.gov.sg, and Vincenty distance between the individual resale locations and all other train stations were calculated based on their latitude and longitude.  
+
+The distance between any resale location and the nearest MRT station was then computed, and plotted below. The mean distance is 745m, with a minimum of 40m and a maximum of 4.1km. 
+
+This surprisingly suggests that the majority of the public housing units are extremely well-connected to the train system, with the majority of units being < 1km away from a train station.
+
+
+
+![Traffic Camera Locations](traffic_camera_loc.png)
 
 Credits: Data derived from data.gov.sg
