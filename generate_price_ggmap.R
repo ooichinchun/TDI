@@ -1,11 +1,6 @@
 # loading the required packages
 library(ggplot2)
 library(ggmap)
-library(grid)
-library(png)
-library(raster)
-library(rgdal)
-library(rgeos) 
 
 data = read.csv("2012_onwards_w_gps_w_google.csv",stringsAsFactors=FALSE)
 
