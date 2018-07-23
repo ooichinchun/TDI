@@ -27,7 +27,19 @@ In total, 102,100 transactions were recorded during this period, out of a total 
 
 Figure above is generated via the use of this [R script](https://raw.githubusercontent.com/ooichinchun/TDI/master/generate_price_ggmap.R "ggmap Script").
 
+### Linear Regression Models
+
+We were expecting the resale prices to show significant variation with distance from downtown, however, the figure above does not seem to show a significant price variation between the various locations across the island.
+
+We thus set out to further investigate the influence of the following factors on housing prices:
+1. Floor area
+2. Age of the unit
+3. Actual height of the unit (aka storey)
+4. Distance to nearest MRT station
+5. Distance to downtown (proxy: City Hall MRT station)
 ![Traffic Camera Locations](traffic_camera_loc.png)
+
+#### Obtaining distance to nearest MRT station and downtown
 
 
 Credits: Data derived from data.gov.sg
