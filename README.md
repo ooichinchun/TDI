@@ -38,6 +38,8 @@ I thus set out to further investigate the influence of the following factors on 
 4. Distance to nearest MRT station
 5. Distance to downtown (proxy: City Hall MRT station)
 
+While the first 3 factors are directly provided by data.gov.sg, and are fairly straight-forward to incorporate into the model, the latter two had to be obtained via calls to Google's API for longitude and latitude.
+
 #### Obtaining distance to nearest MRT station and downtown
 
 Train station names were downloaded from data.gov.sg, and Vincenty distance between the individual resale locations and all other train stations were calculated based on their latitude and longitude.  
@@ -47,8 +49,21 @@ The distance between any resale location and the nearest MRT station was then co
 | ![Proximity to Trains](https://raw.githubusercontent.com/ooichinchun/TDI/master/Dist_Nearest_MRT.png "Train Station Proximity") | 
 |:--:| 
 | **Proximity to Nearest MRT Station** |
+
+
 This surprisingly suggests that the majority of the public housing units are extremely well-connected to the train system, with the majority of units being < 1km away from a train station.
 
+#### Linear Regression model
+
+As a preliminary exercise, this model has been restricted to a simple GLM model, Unsurprisingly, there is a positive correlation between resale price and apartment story height and floor area, while there is a negative correlation between resale price and flat age, distance to nearest train station, and distance to downtown.
+
+It should be noted that this model still does not account for many factors that could affect resale prices, hence, the intercept value (mean price independent of the studied variables) remains high (~ SGD$344,000). Additionally, the linear model assumes linearity in the dependence on the variables specified, but it is highly likely that such relationships may be non-linear. This additional level of complexity is definitely worth studying at a later date.
+
+Unsurprisingly, the impact of floor area is huge, with an average increase of SGD$3,800 per additional square metre of space, while age is similarly important, with the unit losing an average of SGD$3,000 every year that it ages.
+
+Somewhat surprisingly, the impact of proximity to downtown is not as critical as the impact of proximity to the nearest train station. For every additional metre closer the unit is to the train station, the unit becomes SGD$34 more expensive, while it only becomes SGD$15 more expensive for every metre that the unit is closer to downtown. This could be a simple reflection of the fact that people don't prize additional commute time on public transportation to downtown quite as highly as additional walking time to the train station.
+
+##### Impact of Unit Floor
 
 
 ![Traffic Camera Locations](traffic_camera_loc.png)
