@@ -67,7 +67,7 @@ Somewhat surprisingly, the impact of proximity to downtown is not as critical as
 
 Sparsity of data beyond the 30th floor suggests that any conclusions made with regards to floor height should be more thoroughly investigated with a larger data set in subsequent analyses.
 
-| ![Price with Floor](https://raw.githubusercontent.com/ooichinchun/TDI/master/https://github.com/ooichinchun/TDI/blob/master/Floor_Dependency.png "Price Variation with Floor") | 
+| ![Price with Floor](https://github.com/ooichinchun/TDI/blob/master/Floor_Dependency.png "Price Variation with Floor") | 
 |:--:| 
 | **Increase in Resale Price with Unit Height** <br/> Red vertical lines demarcate L15 and L30 respectively. |
 
