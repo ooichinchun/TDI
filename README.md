@@ -25,6 +25,7 @@ Various public residential zones show up quite clearly, with local districts suc
 
 In total, 102,100 transactions were recorded during this period, out of a total of 1.02 million flats in Singapore currently.
 
+Figure above is generated via the use of this [R script](https://raw.githubusercontent.com/ooichinchun/TDI/master/generate_price_ggmap.R "ggmap Script").
 
 ![Traffic Camera Locations](traffic_camera_loc.png)
 
