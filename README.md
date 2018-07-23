@@ -44,6 +44,9 @@ Train station names were downloaded from data.gov.sg, and Vincenty distance betw
 
 The distance between any resale location and the nearest MRT station was then computed, and plotted below. The mean distance is 745m, with a minimum of 40m and a maximum of 4.1km. 
 
+| ![Proximity to Trains](https://raw.githubusercontent.com/ooichinchun/TDI/master/Dist_Nearest_MRT.png "Train Station Proximity") | 
+|:--:| 
+| **Proximity to Nearest MRT Station** |
 This surprisingly suggests that the majority of the public housing units are extremely well-connected to the train system, with the majority of units being < 1km away from a train station.
 
 
