@@ -42,7 +42,7 @@ While the first 3 factors are directly provided by data.gov.sg, and are fairly s
 
 #### Obtaining distance to nearest MRT station and downtown
 
-Train station names were downloaded from data.gov.sg, and Vincenty distance between the individual resale locations and all other train stations were calculated based on their latitude and longitude.  
+Train station names were downloaded from data.gov.sg, and Vincenty distances between the individual resale locations and all other train stations were calculated based on their latitude and longitude.  
 
 The distance between any resale location and the nearest MRT station was then computed, and plotted below. The mean distance is 745m, with a minimum of 40m and a maximum of 4.1km. 
 
@@ -55,7 +55,7 @@ This surprisingly suggests that the majority of the public housing units are ext
 
 #### Linear Regression model
 
-As a preliminary exercise, this model has been restricted to a simple GLM model, Unsurprisingly, there is a positive correlation between resale price and apartment story height and floor area, while there is a negative correlation between resale price and flat age, distance to nearest train station, and distance to downtown.
+As a preliminary exercise, this model has been restricted to a simple GLM model. Unsurprisingly, there is a positive correlation between resale price and apartment story height and floor area, while there is a negative correlation between resale price and flat age, distance to nearest train station, and distance to downtown.
 
 It should be noted that this model still does not account for many factors that could affect resale prices, hence, the intercept value (mean price independent of the studied variables) remains high (~ SGD$344,000). Additionally, the linear model assumes linearity in the dependence on the variables specified, but it is highly likely that such relationships may be non-linear. This additional level of complexity is definitely worth studying at a later date.
 
@@ -65,7 +65,15 @@ Somewhat surprisingly, the impact of proximity to downtown is not as critical as
 
 ##### Impact of Unit Floor
 
+Sparsity of data beyond the 30th floor suggests that any conclusions made with regards to floor height should be more thoroughly investigated with a larger data set in subsequent analyses.
 
+| ![Price with Floor](https://raw.githubusercontent.com/ooichinchun/TDI/master/Floor_Dependency.png "Price Variation with Floor") | 
+|:--:| 
+| **Increase in Resale Price with Unit Height** <br\> Red vertical lines demarcate L15 and L30 respectively. |
+
+Interestingly, the impact of the unit storey seems to display two distinct patterns, with a slower increase in price per floor of ~SGD$3,000 up to the first 15 floors, and a more rapid increase of ~SGD$4,500 per floor beyond that up to the 30th floor and potentially beyond.
+
+This seems to suggest some psychological preference for higher units, and is an interesting observation for pricing.
 ![Traffic Camera Locations](traffic_camera_loc.png)
 
 Credits: Data derived from data.gov.sg
