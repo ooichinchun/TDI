@@ -20,7 +20,7 @@ Initial data as retrieved from data.gov.sg provides resale information in actual
 
 | ![Resale Flat Location](https://raw.githubusercontent.com/ooichinchun/TDI/master/Price_Distribution.png "Housing Locations") | 
 |:--:| 
-| **Resale Locations (2009-2017)** Color represent sale price on a log scale (most units range between SGD$100,000 and SGD$1,000,000. |
+| **Resale Locations (2009-2017)** <br/> Color represent sale price on a log scale (most units range between SGD$100,000 and SGD$1,000,000. |
 
 
 
